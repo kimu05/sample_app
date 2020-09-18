@@ -48,7 +48,7 @@ def controller_test(resource)
   "test/controllers/#{resource}_controller_test.rb"
 end
 
-# 与えられたリソースに対応するすべてのテストを返す
+# 与えられたリソースに対応するすべてのテストを返す。
 def resource_tests(resource)
   integration_tests(resource) << controller_test(resource)
 end
